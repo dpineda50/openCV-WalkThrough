@@ -86,6 +86,7 @@ for c in cnts:
     if len(c) >= 5:
         # fit an ellipse to contour
         ellipse = cv2.fitEllipse(c)
+        
         cv2.ellipse(clone, ellipse, (0, 255, 0), 2)
 cv2.imshow("Ellipses", clone)
 cv2.waitKey(0)
