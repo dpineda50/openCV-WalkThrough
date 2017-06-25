@@ -28,3 +28,12 @@ plt.plot(hist)
 plt.xlim([0, 256])
 plt.show()
 
+hist /= hist.sum()
+
+plt.figure()
+plt.title("Grayscale Histogram (Normalized)")
+plt.xlabel("Bins")
+plt.ylabel("% of Pixels")
+plt.plot(hist)
+plt.xlim([0, 256])
+plt.show()
