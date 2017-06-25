@@ -20,3 +20,4 @@ cv2.imshow("Original", image)
 cv2.imshow("Histogram Equalization", eq)
 cv2.waitKey(0)
 
+print eq[272][146]

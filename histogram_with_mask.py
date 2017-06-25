@@ -21,7 +21,8 @@ def plot_histogram(image, title, mask=None):
 
 
 #load the image and plot a histogram for it
-image = cv2.imread("images/beach.png")
+image = cv2.imread("images/horseshoe_bend.png")
+image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 cv2.imshow("Original", image)
 plot_histogram(image, "Histogram for Original Image")
 
